@@ -99,6 +99,8 @@ strong { font-weight: (--fw-bold); }
   letter-spacing: 2px;
   font-weight: var(--fw-bold);
   transition: transform 200ms ease-in-out;
+  margin-bottom: 5em;
+
 }
 
 .btn:hover {
@@ -300,7 +302,7 @@ svg {
     grid-template-areas: 
           "img title"
           "img subtitle";
-    grid-template-columns: min-content max-content;
+    
   }
 
   .intro__img {
@@ -359,6 +361,11 @@ svg {
   margin: 0 auto;
 }
 
+.experience>ul {
+  display: inline-block;
+  text-align: left;
+
+}
 @media (min-width: 800px) {
   .services {
     display: flex;
@@ -385,13 +392,8 @@ svg {
 
 @media (min-width: 600px) {
   .about-me {
-    display: grid;
-    grid-template-columns: 1fr 200px;
-    grid-template-areas: 
-    "title img"
-    "subtitle img"
-    "text img";
-    grid-column-gap: 2em;
+    display: block;
+    
   }
 
   .section__title--about {
